@@ -178,7 +178,7 @@ export default function Home() {
                     Lahir dan Batin untuk semua kesalahan kami.
                   </p>
                   <p className="text-xs text-primary/40 font-light">
-                    © 2026 • Keluarga Rinto Raharjo 
+                    © 2026 • Keluarga Rinto Raharjo
                   </p>
                 </div>
               </div>
