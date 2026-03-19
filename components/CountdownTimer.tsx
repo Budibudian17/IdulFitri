@@ -22,8 +22,8 @@ export default function CountdownTimer() {
     setMounted(true)
 
     const calculateTimeLeft = () => {
-      // Idul Fitri 1447 Hijriah (2026) - Jumat, 20 Maret 2026 (WIB)
-      const targetDate = new Date('2026-03-20T00:00:00+07:00').getTime()
+      // Idul Fitri 1447 Hijriah (2026) - Sabtu, 21 Maret 2026 (WIB)
+      const targetDate = new Date('2026-03-21T00:00:00+07:00').getTime()
       const now = new Date().getTime()
       const difference = targetDate - now
 
