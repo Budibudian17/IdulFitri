@@ -9,6 +9,7 @@ export default function IntroPage() {
   const router = useRouter()
   const [isReady, setIsReady] = useState(false)
   const [hasVisited, setHasVisited] = useState(false)
+  const [isNavigating, setIsNavigating] = useState(false)
 
   useEffect(() => {
     setIsReady(true)
@@ -19,6 +20,8 @@ export default function IntroPage() {
   }, [])
 
   const handleEnter = () => {
+    if (isNavigating) return
+    setIsNavigating(true)
     localStorage.setItem('visitedIntro', 'true')
     router.push('/')
   }
@@ -28,9 +31,9 @@ export default function IntroPage() {
       {/* Subtle background elements */}
       <div className="fixed inset-0 -z-10">
         {/* Top left accent */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/3 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-64 h-64 bg-linear-to-br from-primary/3 to-transparent rounded-full blur-3xl" />
         {/* Bottom right accent */}
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-secondary/3 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-linear-to-tl from-secondary/3 to-transparent rounded-full blur-3xl" />
         {/* Subtle grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.02] pointer-events-none"
@@ -55,8 +58,10 @@ export default function IntroPage() {
           isReady ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
           <button
+            type="button"
+            onPointerDown={handleEnter}
             onClick={handleEnter}
-            className="group relative px-8 md:px-12 py-4 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-full font-light text-lg tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95"
+            className="group relative px-8 md:px-12 py-4 bg-linear-to-r from-primary to-secondary text-primary-foreground rounded-full font-light text-lg tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95"
           >
             <span className="flex items-center gap-2">
               Masuk Ke Halaman Utama
