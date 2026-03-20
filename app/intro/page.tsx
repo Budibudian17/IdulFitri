@@ -1,15 +1,12 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
 import QuoteCarousel from '@/components/QuoteCarousel'
 import { ArrowRight } from 'lucide-react'
 
 export default function IntroPage() {
-  const router = useRouter()
   const [isReady, setIsReady] = useState(false)
   const [hasVisited, setHasVisited] = useState(false)
-  const [isNavigating, setIsNavigating] = useState(false)
 
   useEffect(() => {
     setIsReady(true)
@@ -20,10 +17,7 @@ export default function IntroPage() {
   }, [])
 
   const handleEnter = () => {
-    if (isNavigating) return
-    setIsNavigating(true)
     localStorage.setItem('visitedIntro', 'true')
-    router.push('/')
   }
 
   return (
@@ -57,8 +51,8 @@ export default function IntroPage() {
         <div className={`flex flex-col items-center gap-6 mt-16 md:mt-20 transition-all duration-1000 delay-500 ${
           isReady ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-          <button
-            type="button"
+          <a
+            href="/"
             onPointerDown={handleEnter}
             onClick={handleEnter}
             className="group relative px-8 md:px-12 py-4 bg-linear-to-r from-primary to-secondary text-primary-foreground rounded-full font-light text-lg tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -67,7 +61,7 @@ export default function IntroPage() {
               Masuk Ke Halaman Utama
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </span>
-          </button>
+          </a>
 
           {/* Skip message if already visited */}
           {hasVisited && (
