@@ -11,7 +11,7 @@ interface GalleryImage {
   alt: string
 }
 
-const sampleImages: GalleryImage[] = Array.from({ length: 6 }, (_, i) => {
+const sampleImages: GalleryImage[] = Array.from({ length: 9 }, (_, i) => {
   const n = i + 1
   return {
     id: n,
