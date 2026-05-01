@@ -6,7 +6,7 @@ import { ChevronRight } from 'lucide-react'
 const quotes = [
   {
     text: 'Selamat Hari Raya Idul Fitri',
-    subtitle: '1447 Hijriah',
+    subtitle: '1448 Hijriah',
     arabic: 'كل عام وأنتم بألف خير',
   },
   {

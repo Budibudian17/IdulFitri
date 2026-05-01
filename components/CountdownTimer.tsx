@@ -12,7 +12,7 @@ interface TimeLeft {
 type DisplayMode = 'pre' | 'confetti' | 'event'
 
 export default function CountdownTimer() {
-  const EVENT_DATE_WIB = '2026-03-21'
+  const EVENT_DATE_WIB = '2027-03-09'
   const CONFETTI_DURATION_MS = 8000
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -73,8 +73,8 @@ export default function CountdownTimer() {
     if (mode !== 'event') return
 
     const calculateTimeLeft = () => {
-      // Idul Fitri 1447 Hijriah (2026) - Sabtu, 21 Maret 2026 (WIB)
-      const targetDate = new Date('2026-03-21T00:00:00+07:00').getTime()
+      // Idul Fitri 1448 Hijriah (2027) - Malam Selasa, 9 Maret 2027 (WIB)
+      const targetDate = new Date('2027-03-09T00:00:00+07:00').getTime()
       const now = new Date().getTime()
       const difference = targetDate - now
 

@@ -8,12 +8,12 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Ucapan Idul Fitri 1447 Hijriah',
-  description: 'Ucapan Idul Fitri 1447 Hijriah bersama keluarga dengan countdown timer, galeri foto, dan guestbook interaktif.',
+  title: 'Ucapan Idul Fitri 1448 Hijriah',
+  description: 'Ucapan Idul Fitri 1448 Hijriah bersama keluarga dengan countdown timer, galeri foto, dan guestbook interaktif.',
   generator: 'v0.app',
-  keywords: 'Idul Fitri, 1447 Hijriah, Eid Mubarak, keluarga, ucapan',
+  keywords: 'Idul Fitri, 1448 Hijriah, Eid Mubarak, keluarga, ucapan',
   openGraph: {
-    title: 'Ucapan Idul Fitri 1447 Hijriah',
+    title: 'Ucapan Idul Fitri 1448 Hijriah',
     description: 'Rayakan Idul Fitri bersama keluarga dengan cara yang spesial',
     type: 'website',
   },

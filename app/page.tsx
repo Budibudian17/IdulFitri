@@ -6,12 +6,12 @@ import RotatingQuotes from '@/components/RotatingQuotes'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Ucapan Idul Fitri 1447 Hijriah - Keluarga Bersama',
+  title: 'Ucapan Idul Fitri 1448 Hijriah - Keluarga Bersama',
   description:
-    'Halaman ucapan Idul Fitri 1447 Hijriah untuk keluarga, dengan countdown timer, galeri foto, dan guestbook interaktif.',
-  keywords: 'Idul Fitri, 1447 Hijriah, keluarga, ucapan, greeting',
+    'Halaman ucapan Idul Fitri 1448 Hijriah untuk keluarga, dengan countdown timer, galeri foto, dan guestbook interaktif.',
+  keywords: 'Idul Fitri, 1448 Hijriah, keluarga, ucapan, greeting',
   openGraph: {
-    title: 'Ucapan Idul Fitri 1447 Hijriah',
+    title: 'Ucapan Idul Fitri 1448 Hijriah',
     description: 'Ucapan Idul Fitri bersama keluarga tercinta',
     type: 'website',
   },
@@ -59,7 +59,7 @@ export default function Home() {
 
               <h1 className="text-5xl md:text-7xl font-light leading-tight text-foreground">
                 Selamat <span className="font-normal">Idul Fitri</span> <br />
-                <span className="text-primary/80">1447 Hijriah</span>
+                <span className="text-primary/80">1448 Hijriah</span>
               </h1>
 
               <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-md">
@@ -167,7 +167,7 @@ export default function Home() {
                     Ucapan Idul Fitri
                   </p>
                   <p className="text-2xl md:text-3xl font-light text-foreground">
-                    1447 Hijriah
+                    1448 Hijriah
                   </p>
                 </div>
 

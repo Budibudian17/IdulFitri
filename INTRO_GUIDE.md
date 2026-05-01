@@ -31,7 +31,7 @@ Edit `/components/QuoteCarousel.tsx`:
 const quotes = [
   {
     text: 'Selamat Hari Raya Idul Fitri',  // Main greeting
-    subtitle: '1447 Hijriah',               // Subtitle
+    subtitle: '1448 Hijriah',               // Subtitle
     arabic: 'كل عام وأنتم بألف خير',      // Arabic text
   },
   {
